@@ -11,9 +11,36 @@
     <link rel="apple-touch-icon" href="icon180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <title>CaAll</title>
+    <style>
+    @font-face {
+      font-family: 'Sk-Modernist Mono';
+      src: url('sk-modernist-mono.woff2') format('woff2'), url('sk-modernist-mono.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: 'Sk-Modernist';
+      src: url('sk-modernist-regular.woff2') format('woff2'), url('sk-modernist-regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+
+    @font-face {
+      font-family: 'Sk-Modernist';
+      src: url('sk-modernist-bold.woff2') format('woff2'), url('sk-modernist-bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: block;
+    }
+    </style>
     <script>var VERSION = "{{version}}";</script>
   </head>
   <body>
+    <p style="font-family: 'Sk-Modernist Mono', sans-serif;top: -100px; font-weight: 400; position: absolute;">Sk Modernist Mono Preload</p>
+    <p style="font-family: 'Sk-Modernist', sans-serif;top: -100px; font-weight: 400; position: absolute;">Sk Modernist Regular Preload</p>
+    <p style="font-family: 'Sk-Modernist', sans-serif;top: -100px; font-weight: 700; position: absolute;">Sk Modernist Bold Preload</p>
     <ca-all></ca-all>
     <script>(function(){function g(){var b=document.createElement("script");b.src="./customElements.js";b.onload=e;document.body.appendChild(b)}function e(){var b=VERSION,a=!0,c=document.createElement("script");if("function"===typeof Object.fromEntries)var d=2019;else void 0!==window.Promise&&"function"===typeof window.Promise.prototype.finally?d=2018:"function"===typeof String.prototype.padStart?d=2017:"function"===typeof Array.prototype.includes?d=2016:void 0!==window.Promise?d=2015:(d=5,a=!1);a&&(c.type="module");c.src="CaAll."+b+".es"+d+".js";c.defer=!0;document.body.appendChild(c)}if("function"!==typeof window.CustomEvent){var f=function(b,a){a=a||{bubbles:!1,cancelable:!1,detail:void 0};var c=document.createEvent("CustomEvent");c.initCustomEvent(b,a.bubbles,a.cancelable,a.detail);return c};f.prototype=window.Event.prototype;window.CustomEvent=f}window.customElements?e():g()})()</script>
   </body>
