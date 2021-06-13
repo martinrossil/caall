@@ -1,6 +1,6 @@
 {
   "name": "caall",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Demo Web Application",
   "main": "index.js",
   "scripts": {
