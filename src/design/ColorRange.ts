@@ -15,6 +15,6 @@ export default class ColorRange implements IColorRange {
         this.opacity60 = new Color(color.hue, color.saturation, color.lightness, 0.6);
         this.opacity40 = new Color(color.hue, color.saturation, color.lightness, 0.4);
         this.opacity20 = new Color(color.hue, color.saturation, color.lightness, 0.2);
-        this.opacity10 = new Color(color.hue, color.saturation, color.lightness, 0.1);
+        this.opacity10 = new Color(color.hue, color.saturation, color.lightness, 0.06);
     }
 }
