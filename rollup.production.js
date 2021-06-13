@@ -19,6 +19,7 @@ export default {
                     { src: 'assets/fonts/**.*', dest: 'public' },
                     { src: 'assets/icons/**.*', dest: 'public' },
                     { src: 'assets/production/**.*', dest: 'public', },
+                    { src: 'assets/avatars/**.*', dest: 'public', },
                     {
                         src: 'assets/index.html',
                         dest: 'public',
